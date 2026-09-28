@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sree Parvathi Metals — Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sree Parvathi Metals — fine aluminum cookware, furniture, windows, railings and custom fabrication.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;background:#F7F4ED;color:#0F1B2D}
+a{color:#0F1B2D;text-decoration:none;transition:color .2s}a:hover{color:#8A6A2E}
+.metal{background:repeating-linear-gradient(90deg,rgba(255,255,255,0.18) 0px,rgba(255,255,255,0.18) 1px,rgba(0,0,0,0.035) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#E4E6E8 0%,#C9CDD1 45%,#EEF0F1 70%,#BFC4C9 100%)}
+.metal-dark{background:repeating-linear-gradient(90deg,rgba(255,255,255,0.05) 0px,rgba(255,255,255,0.05) 1px,rgba(0,0,0,0.08) 2px,rgba(0,0,0,0) 3px),linear-gradient(150deg,#0F1B2D 0%,#1D3050 50%,#0A1322 100%)}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+input,select,textarea{font-family:'Manrope',system-ui,sans-serif}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes sweep{0%{transform:translateX(-120%) skewX(-18deg)}60%,100%{transform:translateX(260%) skewX(-18deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinBack{to{transform:rotate(-360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes chrome{0%{background-position:200% 0}100%{background-position:-200% 0}}
+@keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rise{opacity:0;animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.15s}.d2{animation-delay:.35s}.d3{animation-delay:.55s}.d4{animation-delay:.75s}.d5{animation-delay:.95s}
+.sweep{position:absolute;top:-10%;left:0;width:34%;height:120%;background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 100%);animation:sweep 5s ease-in-out infinite;pointer-events:none}
+.ring{transform-origin:260px 260px;transform-box:view-box;animation:spin 40s linear infinite}
+.ring2{transform-origin:260px 260px;transform-box:view-box;animation:spinBack 28s linear infinite}
+.float{animation:float 6s ease-in-out infinite}
+.draw path,.draw ellipse{stroke-dasharray:900;animation:draw 3s ease-out forwards}
+.chrome{background:linear-gradient(100deg,#6E767E 0%,#C9CED3 20%,#FFFFFF 30%,#9AA2AA 42%,#3E444B 55%,#B8BEC4 70%,#FFFFFF 80%,#6E767E 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:chrome 6s linear infinite}
+.ticker{display:flex;width:max-content;animation:ticker 30s linear infinite}
+@keyframes lidLift{0%,55%,100%{transform:translateY(0) rotate(0)}65%{transform:translateY(-12px) rotate(-3deg)}72%{transform:translateY(-4px) rotate(1deg)}80%{transform:translateY(-9px) rotate(-2deg)}90%{transform:translateY(0) rotate(0)}}
+@keyframes steamUp{0%{opacity:0;transform:translateY(14px)}35%{opacity:.8}100%{opacity:0;transform:translateY(-30px)}}
+@keyframes rockPan{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}
+@keyframes tiltKettle{0%,60%,100%{transform:rotate(0)}75%,85%{transform:rotate(-9deg)}}
+@keyframes swingLadle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes bobPot{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.bob{transform-box:fill-box;animation:bobPot 5s ease-in-out infinite}
+.lid{transform-box:fill-box;transform-origin:50% 100%;animation:lidLift 4s ease-in-out infinite}
+.steam path{transform-box:fill-box;opacity:0;animation:steamUp 3s ease-out infinite}
+.steam .s2{animation-delay:1s}.steam .s3{animation-delay:2s}
+.rock{transform-box:fill-box;transform-origin:30% 60%;animation:rockPan 3.2s ease-in-out infinite}
+.tilt{transform-box:fill-box;transform-origin:20% 100%;animation:tiltKettle 5s ease-in-out infinite}
+.swing{transform-box:fill-box;transform-origin:0% 0%;animation:swingLadle 4s ease-in-out infinite}
+@keyframes goldflow{0%{background-position:0% 50%}100%{background-position:250% 50%}}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.2) rotate(0)}50%{opacity:1;transform:scale(1) rotate(90deg)}}
+@keyframes halo{0%,100%{transform:translate(-50%,-50%) scale(.85);opacity:.55}50%{transform:translate(-50%,-50%) scale(1.1);opacity:1}}
+@keyframes glow{0%{box-shadow:0 0 0 0 rgba(193,160,100,.65)}70%{box-shadow:0 0 0 16px rgba(193,160,100,0)}100%{box-shadow:0 0 0 0 rgba(193,160,100,0)}}
+@keyframes btnShine{0%,70%{left:-60%}100%{left:130%}}
+@keyframes revealUp{from{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes gemSpin{to{transform:rotate(360deg)}}
+@keyframes cardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.gold-text{background:linear-gradient(100deg,#8A6A2E 0%,#E9D29A 20%,#B8914A 40%,#F6E7BD 60%,#8A6A2E 80%,#E9D29A 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent !important;animation:goldflow 5s linear infinite}
+.spark{position:absolute;width:14px;height:14px;background:#D6B97C;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:twinkle 3.6s ease-in-out infinite;pointer-events:none;filter:drop-shadow(0 0 6px rgba(233,210,154,.9))}
+.halo{position:absolute;left:50%;top:42%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(233,210,154,.55) 0%,rgba(233,210,154,.15) 45%,rgba(233,210,154,0) 70%);animation:halo 4s ease-in-out infinite;pointer-events:none}
+.btn{position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.55),rgba(255,255,255,0));transform:skewX(-20deg);animation:btnShine 3.5s ease-in-out infinite;pointer-events:none}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(15,27,45,.28)}
+.btn-ghost::after{background:linear-gradient(100deg,rgba(193,160,100,0),rgba(193,160,100,.45),rgba(193,160,100,0))}
+.btn-ghost:hover{background:#0F1B2D;color:#F7F4ED}
+.pulse{animation:glow 2.4s ease-out infinite}
+.nav a{position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#C1A064;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.nav a:hover::after{transform:scaleX(1)}
+.card{transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.card:hover{transform:translateY(-10px)}
+.card-img{position:relative;overflow:hidden;transition:box-shadow .4s ease}
+.card:hover .card-img{box-shadow:0 24px 50px rgba(15,27,45,.25),inset 0 0 0 2px #C1A064}
+.card-img::after{content:"";position:absolute;top:-20%;left:-70%;width:45%;height:140%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0));transform:skewX(-18deg);transition:left .8s ease;pointer-events:none}
+.card:hover .card-img::after{left:130%}
+.card-img svg{animation:cardFloat 4s ease-in-out infinite;transition:transform .4s ease}
+.card:nth-child(2) .card-img svg{animation-delay:.6s}.card:nth-child(3) .card-img svg{animation-delay:1.2s}.card:nth-child(4) .card-img svg{animation-delay:1.8s}.card:nth-child(5) .card-img svg{animation-delay:2.4s}.card:nth-child(6) .card-img svg{animation-delay:3s}
+.card:hover .card-img svg{animation-play-state:paused;transform:scale(1.15)}
+.step{position:relative;border-top-color:transparent !important;transition:transform .3s ease}
+.step::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:2px;background:linear-gradient(90deg,#C1A064,#F6E7BD,#C1A064);transform-origin:left;animation:grow 1.6s ease-out both}
+.step:hover{transform:translateY(-6px)}
+.gem{display:inline-block;animation:gemSpin 5s linear infinite;text-shadow:0 0 10px rgba(233,210,154,.9)}
+.progress{display:none}
+.hero-art{min-width:0}.hero-text{flex-shrink:0}.slider{max-width:100%}
+.hero-art > svg,.hero-art > div.serif,.hero-art > div.rise{position:relative;z-index:1}
+@supports (animation-timeline: view()){
+.reveal{animation:revealUp linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.step::before{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 35%}
+.progress{display:block;position:fixed;top:0;left:0;right:0;height:3px;z-index:50;background:linear-gradient(90deg,#8A6A2E,#F6E7BD,#C1A064);transform-origin:left;animation:grow linear both;animation-timeline:scroll(root)}
+}
+@keyframes hueShift{to{filter:hue-rotate(360deg)}}
+@keyframes popIn{0%{transform:scale(0)}70%{transform:scale(1.2)}100%{transform:scale(1)}}
+.card-img.c1{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#F1D2B6 0%,#D59A6A 45%,#F6DECA 70%,#C98553 100%)}
+.card-img.c2{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#F3D3D0 0%,#D9A19C 45%,#F8E2DF 70%,#CC8B86 100%)}
+.card-img.c3{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#CBE6E4 0%,#7FBDBA 45%,#DDF0EE 70%,#6AAFAC 100%)}
+.card-img.c4{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#D2DEF3 0%,#8FA9DA 45%,#E2EAF8 70%,#7C98CF 100%)}
+.card-img.c5{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#D0E8DA 0%,#86C1A0 45%,#E1F1E7 70%,#72B08D 100%)}
+.card-img.c6{background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1px,rgba(0,0,0,.04) 2px,rgba(0,0,0,0) 3px),linear-gradient(160deg,#E4D3E6 0%,#B08FB4 45%,#EEE2EF 70%,#A27FA7 100%)}
+.card:nth-child(1):hover .card-img{box-shadow:0 24px 50px rgba(184,115,61,.42),inset 0 0 0 2px #B8733D}
+.card:nth-child(2):hover .card-img{box-shadow:0 24px 50px rgba(201,139,134,.42),inset 0 0 0 2px #B06F6A}
+.card:nth-child(3):hover .card-img{box-shadow:0 24px 50px rgba(46,140,138,.42),inset 0 0 0 2px #2E8C8A}
+.card:nth-child(4):hover .card-img{box-shadow:0 24px 50px rgba(47,93,168,.42),inset 0 0 0 2px #2F5DA8}
+.card:nth-child(5):hover .card-img{box-shadow:0 24px 50px rgba(47,125,85,.42),inset 0 0 0 2px #2F7D55}
+.card:nth-child(6):hover .card-img{box-shadow:0 24px 50px rgba(122,74,126,.42),inset 0 0 0 2px #7A4A7E}
+.card:nth-child(1) h3{color:#8C4F22}.card:nth-child(2) h3{color:#8E4A45}.card:nth-child(3) h3{color:#1F6664}.card:nth-child(4) h3{color:#24497F}.card:nth-child(5) h3{color:#235E40}.card:nth-child(6) h3{color:#5E3762}
+.spark:nth-of-type(5n+1){background:#E9C27A}.spark:nth-of-type(5n+2){background:#E59C95;filter:drop-shadow(0 0 6px rgba(229,156,149,.9))}.spark:nth-of-type(5n+3){background:#3FB3AE;filter:drop-shadow(0 0 6px rgba(63,179,174,.9))}.spark:nth-of-type(5n+4){background:#5B86D6;filter:drop-shadow(0 0 6px rgba(91,134,214,.9))}.spark:nth-of-type(5n){background:#D98A4E;filter:drop-shadow(0 0 6px rgba(217,138,78,.9))}
+.halo{animation:halo 4s ease-in-out infinite,hueShift 14s linear infinite !important}
+.n1{background-image:linear-gradient(100deg,#B8733D,#F2C29A,#C98553,#F6DECA,#B8733D,#F2C29A) !important}
+.n2{background-image:linear-gradient(100deg,#2E8C8A,#9DE0DC,#3FB3AE,#DDF0EE,#2E8C8A,#9DE0DC) !important}
+.n3{background-image:linear-gradient(100deg,#C98B86,#F6CFCB,#E59C95,#FBE6E3,#C98B86,#F6CFCB) !important}
+.gem.g1{color:#E9C27A !important;text-shadow:0 0 10px rgba(233,194,122,.9)}.gem.g2{color:#E59C95 !important;text-shadow:0 0 10px rgba(229,156,149,.9)}.gem.g3{color:#3FB3AE !important;text-shadow:0 0 10px rgba(63,179,174,.9)}.gem.g4{color:#7FA3E6 !important;text-shadow:0 0 10px rgba(127,163,230,.9)}.gem.g5{color:#D98A4E !important;text-shadow:0 0 10px rgba(217,138,78,.9)}
+.swatch{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12),0 2px 6px rgba(15,27,45,.2);animation:popIn .6s cubic-bezier(.2,.7,.2,1) both;transition:transform .2s ease}
+.swatch:hover{transform:scale(1.25)}
+.sw-silver{background:linear-gradient(135deg,#F2F3F4,#BFC4C9 50%,#E4E6E8)}.sw-gold{background:linear-gradient(135deg,#F6E7BD,#C1A064 50%,#E9D29A)}.sw-copper{background:linear-gradient(135deg,#F2C29A,#B8733D 50%,#D98A4E)}.sw-rose{background:linear-gradient(135deg,#FBE6E3,#C98B86 50%,#E59C95)}.sw-teal{background:linear-gradient(135deg,#9DE0DC,#2E8C8A 50%,#3FB3AE)}.sw-cobalt{background:linear-gradient(135deg,#B8CCF0,#2F5DA8 50%,#5B86D6)}.sw-emerald{background:linear-gradient(135deg,#A9DDBF,#2F7D55 50%,#4FA276)}.sw-plum{background:linear-gradient(135deg,#DCC4DF,#7A4A7E 50%,#A27FA7)}.sw-black{background:linear-gradient(135deg,#5A6068,#15181C 50%,#34393F)}
+.progress{background:linear-gradient(90deg,#C1A064,#D98A4E,#E59C95,#A27FA7,#5B86D6,#3FB3AE,#4FA276) !important}
+@media (prefers-reduced-motion: reduce){.halo,.swatch{animation:none !important}}
+@media (max-width: 900px){.halo{width:280px;height:280px}.spark{width:10px;height:10px}}
+@media (prefers-reduced-motion: reduce){.gold-text,.spark,.halo,.btn::after,.pulse,.card-img svg,.gem,.reveal,.step::before,.progress{animation:none !important;opacity:1;transform:none}}
+@keyframes flicker{0%,100%{filter:brightness(1) saturate(1)}30%{filter:brightness(1.15) saturate(1.2)}55%{filter:brightness(.92) saturate(1)}75%{filter:brightness(1.08) saturate(1.15)}}
+@keyframes emberRise{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(-240px);opacity:0}}
+.molten{background:radial-gradient(circle at 50% 75%,rgba(255,150,50,.75) 0%,rgba(214,80,20,.35) 30%,rgba(10,19,34,0) 65%),linear-gradient(160deg,#1E1511 0%,#3B1D0E 55%,#110B09 100%);animation:flicker 3s ease-in-out infinite}
+.cast-img{box-shadow:0 0 0 1px rgba(240,168,104,.25),0 20px 60px rgba(214,80,20,.25);transition:box-shadow .4s ease}
+.cast-img:hover{box-shadow:0 0 0 2px #F0A868,0 24px 70px rgba(255,120,40,.45)}
+.cast-img::before{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(0deg,rgba(10,6,4,.75),rgba(10,6,4,0));z-index:1;pointer-events:none}
+.molten-text{background:linear-gradient(100deg,#E8541E 0%,#FFB347 25%,#FFE3A3 45%,#FF8A3D 65%,#E8541E 85%,#FFB347 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldflow 4s linear infinite}
+.m2{animation-delay:-1s}.m3{animation-delay:-2s}.m4{animation-delay:-3s}
+.casting::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,130,40,.28),rgba(255,130,40,0) 70%);animation:halo 5s ease-in-out infinite;pointer-events:none;transform:translate(-50%,-50%)}
+.cstep{transition:transform .3s ease}.cstep:hover{transform:translateY(-6px)}
+@media (max-width: 900px){.cast-grid{grid-template-columns:minmax(0,1fr) !important;grid-template-rows:none !important;grid-auto-rows:240px}.cast-grid > *{grid-column:auto !important;grid-row:auto !important}.grid4{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px !important}.casting{padding:64px 20px !important}}
+@media (prefers-reduced-motion: reduce){.molten,.molten-text,.casting::after{animation:none !important}}
+@keyframes tipCrucible{0%,8%{transform:rotate(0)}22%,62%{transform:rotate(-45deg)}78%,100%{transform:rotate(0)}}
+@keyframes pourStream{0%,20%{opacity:0;stroke-dashoffset:230}28%{opacity:1;stroke-dashoffset:0}60%{opacity:1;stroke-dashoffset:0}66%,100%{opacity:0;stroke-dashoffset:-230}}
+@keyframes fillMold{0%,24%{opacity:0;fill:#FFC56B}34%{opacity:1;fill:#FFB347}62%{opacity:1;fill:#FF6A1E}88%,96%{opacity:1;fill:#C9CED3}100%{opacity:0;fill:#C9CED3}}
+@keyframes meltGlow{0%,60%{fill:#FF8A3D;opacity:1}70%,90%{opacity:0}100%{opacity:1;fill:#FF8A3D}}
+@keyframes sparkA{0%,28%{opacity:0;transform:translate(0,0)}34%{opacity:1}46%,100%{opacity:0;transform:translate(-40px,-44px)}}
+@keyframes sparkB{0%,34%{opacity:0;transform:translate(0,0)}40%{opacity:1}52%,100%{opacity:0;transform:translate(38px,-50px)}}
+@keyframes sparkC{0%,42%{opacity:0;transform:translate(0,0)}48%{opacity:1}60%,100%{opacity:0;transform:translate(-24px,-58px)}}
+@keyframes sparkD{0%,48%{opacity:0;transform:translate(0,0)}54%{opacity:1}64%,100%{opacity:0;transform:translate(46px,-30px)}}
+.crucible{transform-box:view-box;transform-origin:250px 180px;animation:tipCrucible 4s ease-in-out infinite}
+.melt{animation:meltGlow 4s ease-in-out infinite;filter:drop-shadow(0 0 4px rgba(255,138,61,.9))}
+.pour{stroke-dasharray:230;stroke-linecap:round;animation:pourStream 4s ease-in-out infinite;filter:drop-shadow(0 0 6px rgba(255,138,61,.95))}
+.mold-fill{animation:fillMold 4s ease-in-out infinite;filter:drop-shadow(0 0 6px rgba(255,120,40,.8))}
+.sparks circle{transform-box:view-box}
+.sp1{animation:sparkA 4s ease-out infinite}.sp2{animation:sparkB 4s ease-out infinite}.sp3{animation:sparkC 4s ease-out infinite}.sp4{animation:sparkD 4s ease-out infinite}
+@media (prefers-reduced-motion: reduce){.crucible,.melt,.pour,.mold-fill,.sparks circle{animation:none !important}.pour,.sparks{opacity:0}.mold-fill{fill:#C9CED3}}
+@keyframes slideTrack{0%,21%{transform:translateX(0)}25%,46%{transform:translateX(-25%)}50%,71%{transform:translateX(-50%)}75%,100%{transform:translateX(-75%)}}
+@keyframes dotOn{0%,21%{width:28px;background:#C1A064}25%,100%{width:8px;background:rgba(15,27,45,.3)}}
+@keyframes spinR{to{transform:rotate(360deg)}}
+@keyframes spinL{to{transform:rotate(-360deg)}}
+@keyframes dashMove{to{stroke-dashoffset:-48}}
+@keyframes furnace{0%,100%{opacity:.18}50%{opacity:.4}}
+@keyframes shineLine{0%,70%{opacity:0}85%{opacity:.9}100%{opacity:0}}
+.slides{animation:slideTrack 16s cubic-bezier(.7,0,.3,1) infinite}
+.slider:hover .slides{animation-play-state:paused}
+.dot{display:block;height:8px;width:8px;border-radius:4px;background:rgba(15,27,45,.3);transition:width .3s}
+.dt1{animation:dotOn 16s infinite}
+.dt2{animation:dotOn 16s infinite;animation-delay:-12s}
+.dt3{animation:dotOn 16s infinite;animation-delay:-8s}
+.roller-top{transform-box:view-box;transform-origin:230px 226px;animation:spinR 4s linear infinite}
+.roller-bot{transform-box:view-box;transform-origin:230px 362px;animation:spinL 4s linear infinite}
+.coil{transform-box:view-box;transform-origin:430px 252px;animation:spinR 6s linear infinite}
+.slab-move{animation:dashMove 2.4s linear infinite}
+.sheet-move{animation:dashMove .9s linear infinite}
+.furnace-glow{animation:furnace 2s ease-in-out infinite;filter:blur(18px)}
+.shine-line{animation:shineLine 4s ease-in-out infinite}
+@media (max-width: 900px){.slide-cap{font-size:10px !important}}
+@media (prefers-reduced-motion: reduce){.slides,.roller-top,.roller-bot,.coil,.slab-move,.sheet-move,.furnace-glow,.shine-line,.dot{animation:none !important}}
+@media (max-width: 900px){
+.hdr{height:auto !important;flex-wrap:wrap;padding:16px 20px !important;row-gap:14px}
+.nav{order:3;width:100%;gap:22px !important;font-size:12px !important;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+.nav a{padding:10px 0}
+.hcta{height:44px !important;padding:0 16px !important;font-size:11px !important}
+.hero{height:auto !important;flex-direction:column-reverse !important}
+.hero-text{width:auto !important;padding:40px 20px 56px !important;gap:22px !important}
+.h1{font-size:52px !important}
+.btns{flex-direction:column;margin-top:4px !important}
+.btns a{justify-content:center}
+.hero-art{padding:32px 16px 40px;gap:4px !important}
+.art-svg{width:100%;max-width:300px;height:auto}
+.brand-xl{font-size:30px !important;letter-spacing:0.03em !important}
+.hdr > a:first-child .serif{font-size:19px !important}
+.hdr > a:first-child svg{width:26px;height:26px}
+.hdr > a:first-child{gap:8px !important}
+.hdr > a:first-child span:last-child{font-size:9px !important;letter-spacing:0.2em !important}
+.hcta{padding:0 12px !important;font-size:10px !important;letter-spacing:0.08em !important}
+.sec{padding:64px 20px !important;gap:40px !important}
+.sec-head{flex-direction:column;align-items:flex-start !important;gap:16px}
+.h2{font-size:40px !important}
+.grid3{grid-template-columns:minmax(0,1fr) !important;gap:40px !important}
+.card-img{height:260px !important}
+.about{height:auto !important;flex-direction:column}
+.about-img{width:auto !important;height:240px;padding:24px 20px !important}
+.about-text{padding:56px 20px !important}
+.contact{flex-direction:column;gap:48px !important}
+.contact-left{width:auto !important}
+.form{grid-template-columns:minmax(0,1fr) !important}
+.form > *{grid-column:auto !important}
+.form button{justify-self:stretch !important}
+.ftr{flex-direction:column;gap:32px;padding:48px 20px !important}
+}
+@media (prefers-reduced-motion: reduce){.rise,.sweep,.ring,.ring2,.float,.draw path,.draw ellipse,.chrome,.ticker,.bob,.lid,.rock,.tilt,.swing{animation:none;opacity:1;stroke-dashoffset:0}.steam path{animation:none;opacity:.6}}
+</style>
+
+<style>
+.cast-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.cast-img:hover .cast-photo{transform:scale(1.07)}
+.card-img .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .card-img .photo{transform:scale(1.08)}
+.card-img .tint{position:absolute;inset:0;mix-blend-mode:soft-light;opacity:.55;pointer-events:none}
+.c1 .tint{background:#B8733D}.c2 .tint{background:#C98B86}.c3 .tint{background:#2E8C8A}.c4 .tint{background:#2F5DA8}.c5 .tint{background:#2F7D55}.c6 .tint{background:#7A4A7E}
+.about-img{position:relative;overflow:hidden}
+.about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-img > span{position:relative;z-index:1;color:#fff !important;display:none}
+#custom{position:relative;overflow:hidden}
+#custom > .bgphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.16;pointer-events:none}
+#custom > *:not(.bgphoto){position:relative}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #F7F4ED; overflow: hidden">
+
+<header class="hdr" style="height: 96px; box-sizing: border-box; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E4DDCC">
+<a href="#" style="display: flex; align-items: center; gap: 14px">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#0F1B2D" stroke-width="1.4"><path d="M17 2 L31 30 H3 Z"/><path d="M17 12 L24.5 27 H9.5 Z"/></svg>
+<span class="serif" style="font-size: 28px; font-weight: 600; letter-spacing: 0.04em">SREE PARVATHI</span>
+<span style="font-size: 11px; letter-spacing: 0.3em; color: #5B6679; margin-top: 4px">METALS</span>
+</a>
+<nav class="nav" style="display: flex; gap: 44px; font-size: 14px; letter-spacing: 0.08em">
+<a href="#casting">CASTING</a>
+<a href="#collections">COLLECTIONS</a>
+<a href="#custom">CUSTOM WORK</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+</nav>
+<a href="#contact" class="hcta btn pulse" style="height: 48px; padding: 0 28px; display: flex; align-items: center; background: #C1A064; color: #0F1B2D; font-weight: 600; font-size: 13px; letter-spacing: 0.14em">REQUEST A QUOTE</a>
+</header>
+
+<section class="hero" style="height: 760px; display: flex; flex-direction: row-reverse">
+<div class="hero-text" style="width: 680px; box-sizing: border-box; padding: 120px 80px 80px; display: flex; flex-direction: column; gap: 32px">
+<div class="rise d1" style="font-size: 12px; letter-spacing: 0.32em; color: #8A6A2E">THE ALUMINUM COMPANY</div>
+<h1 class="serif rise d2 h1" style="margin: 0; font-size: 92px; line-height: 0.98; font-weight: 400">Light in weight.<br><span class="gold-text" style="font-style: italic">Built to last.</span></h1>
+<p class="rise d3" style="margin: 0; max-width: 460px; font-size: 18px; line-height: 1.7; color: #4A5568">Fine aluminum products for homes, businesses and builders — from everyday cookware to architectural fittings, finished by hand and made to outlive trends.</p>
+<div class="rise d4 btns" style="display: flex; gap: 16px; margin-top: 16px">
+<a href="#collections" class="btn pulse" style="height: 56px; padding: 0 34px; display: flex; align-items: center; background: #0F1B2D; color: #F7F4ED; font-size: 13px; letter-spacing: 0.14em">EXPLORE THE COLLECTION</a>
+<a href="#custom" class="btn btn-ghost" style="height: 56px; padding: 0 34px; display: flex; align-items: center; border: 1px solid #0F1B2D; font-size: 13px; letter-spacing: 0.14em">CUSTOM ORDERS</a>
+</div>
+</div>
+<div class="metal hero-art" style="flex-grow: 1; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px">
+<div class="halo"></div>
+<div class="sweep"></div>
+<span class="spark" style="left: 12%; top: 14%; animation-delay: 0s"></span><span class="spark" style="left: 84%; top: 10%; animation-delay: 0.7s"></span><span class="spark" style="left: 22%; top: 70%; animation-delay: 1.4s"></span><span class="spark" style="left: 90%; top: 52%; animation-delay: 2.1s"></span><span class="spark" style="left: 8%; top: 44%; animation-delay: 2.8s"></span><span class="spark" style="left: 70%; top: 80%; animation-delay: 0.35s"></span><span class="spark" style="left: 50%; top: 6%; animation-delay: 1.05s"></span><span class="spark" style="left: 35%; top: 88%; animation-delay: 1.75s"></span><span class="spark" style="left: 95%; top: 30%; animation-delay: 2.45s"></span><span class="spark" style="left: 60%; top: 18%; animation-delay: 3.1s"></span><span class="spark" style="left: 18%; top: 30%; animation-delay: 3.5s"></span><span class="spark" style="left: 78%; top: 64%; animation-delay: 1.2s"></span>
+<div class="slider" style="position: relative; z-index: 1; width: 100%; overflow: hidden">
+<div class="slides" style="display: flex; width: 400%">
+<div class="slide" style="width: 25%; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<svg class="art-svg" width="400" height="400" viewBox="0 0 520 520" fill="none" stroke="#0F1B2D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Animated aluminum cookware: a steaming pot, a frying pan, a kettle and a ladle">
+<g class="ring"><circle cx="260" cy="260" r="236" stroke-opacity="0.35" stroke-dasharray="2 10"/><circle cx="260" cy="24" r="5" fill="#C1A064" stroke="none"/></g>
+<g class="ring2"><circle cx="260" cy="260" r="200" stroke-opacity="0.4" stroke-dasharray="60 14 4 14"/></g>
+
+<g class="bob">
+<g class="steam"><path class="s1" d="M232 190 C220 172 244 162 232 142"/><path class="s2" d="M260 186 C248 166 272 156 260 132"/><path class="s3" d="M288 190 C276 172 300 162 288 142"/></g>
+<g class="draw">
+<path d="M180 262 H340 V338 C340 364 180 364 180 338 Z"/>
+<path d="M180 262 H340" stroke-width="2"/>
+<path d="M180 280 H156 C150 280 150 292 156 292 H180"/>
+<path d="M340 280 H364 C370 280 370 292 364 292 H340"/>
+<path d="M200 300 H320" stroke-opacity="0.35"/>
+</g>
+<g class="lid"><g class="draw">
+<path d="M174 258 C184 222 336 222 346 258 Z"/>
+<path d="M250 226 V216 H270 V226"/>
+</g></g>
+</g>
+
+<g class="rock"><g class="draw">
+<ellipse cx="118" cy="408" rx="62" ry="15"/>
+<path d="M56 408 C60 432 176 432 180 408"/>
+<path d="M180 404 L250 386 C256 385 258 394 252 396 L182 414"/>
+</g></g>
+
+<g class="tilt"><g class="draw">
+<path d="M346 446 C336 378 452 378 442 446 Z"/>
+<path d="M340 446 H448"/>
+<path d="M364 392 C368 350 422 350 426 392"/>
+<path d="M436 420 L470 392 L476 396"/>
+<path d="M388 374 H400"/>
+</g>
+<g class="steam"><path class="s2" d="M478 382 C470 368 488 360 480 344"/></g>
+</g>
+
+<g class="swing"><g class="draw">
+<path d="M90 120 L150 200"/>
+<path d="M150 200 C132 206 132 236 156 240 C180 244 188 214 170 202 Z"/>
+</g></g>
+</svg>
+<span class="slide-cap" style="font-size: 12px; letter-spacing: 0.3em; color: #0F1B2D">ALUMINUM COOKWARE</span>
+</div>
+<div class="slide" style="width: 25%; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<svg class="art-svg" width="400" height="400" viewBox="0 0 520 520" fill="none" stroke="#0F1B2D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Animated rolling mill: a thick aluminum slab passes between turning rollers and comes out as thin sheet wound into a coil">
+<g class="ring"><circle cx="260" cy="260" r="236" stroke-opacity="0.35" stroke-dasharray="2 10"/><circle cx="260" cy="24" r="5" fill="#C1A064" stroke="none"/></g>
+<g class="ring2"><circle cx="260" cy="260" r="200" stroke-opacity="0.4" stroke-dasharray="60 14 4 14"/></g>
+<rect x="40" y="276" width="150" height="34" rx="2" fill="#C9CED3" fill-opacity="0.8"/>
+<path class="slab-move" d="M40 293 H190" stroke-dasharray="6 18" stroke-opacity="0.6"/>
+<path d="M190 276 L230 290 V298 L190 310" fill="#C9CED3" fill-opacity="0.8"/>
+<rect x="230" y="290" width="160" height="8" fill="#E4E6E8"/>
+<path class="sheet-move" d="M230 294 H392" stroke-dasharray="4 14" stroke-opacity="0.6"/>
+<g class="roller-top"><circle cx="230" cy="226" r="62" fill="#DDE1E4" fill-opacity="0.7"/><circle cx="230" cy="226" r="12"/><path d="M230 170 V282 M174 226 H286 M190 186 L270 266 M270 186 L190 266" stroke-opacity="0.35"/></g>
+<g class="roller-bot"><circle cx="230" cy="362" r="62" fill="#DDE1E4" fill-opacity="0.7"/><circle cx="230" cy="362" r="12"/><path d="M230 306 V418 M174 362 H286 M190 322 L270 402 M270 322 L190 402" stroke-opacity="0.35"/></g>
+<g class="coil"><circle cx="430" cy="252" r="46" fill="#E4E6E8" fill-opacity="0.7"/><circle cx="430" cy="252" r="36"/><circle cx="430" cy="252" r="27"/><circle cx="430" cy="252" r="18"/><circle cx="430" cy="252" r="9" fill="#0F1B2D"/><path d="M430 206 V216" stroke-width="2"/></g>
+<path d="M390 294 C408 294 420 298 430 298" />
+</svg>
+<span class="slide-cap" style="font-size: 12px; letter-spacing: 0.3em; color: #0F1B2D">ROLLING INTO SHEET</span>
+</div>
+<div class="slide" style="width: 25%; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<svg class="art-svg" width="400" height="400" viewBox="0 0 520 520" fill="none" stroke="#0F1B2D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Animated casting: a crucible tips and pours molten aluminum into a kadai mold, which cools to silver">
+<g class="ring"><circle cx="260" cy="260" r="236" stroke-opacity="0.35" stroke-dasharray="2 10"/><circle cx="260" cy="24" r="5" fill="#C1A064" stroke="none"/></g>
+<g class="ring2"><circle cx="260" cy="260" r="200" stroke-opacity="0.4" stroke-dasharray="60 14 4 14"/></g>
+<ellipse class="furnace-glow" cx="190" cy="360" rx="120" ry="40" fill="#FF8A3D" stroke="none"/>
+<g>
+<rect x="100" y="318" width="180" height="84" rx="4" fill="#D8C39A" fill-opacity="0.6"/>
+<path d="M100 340 H280" stroke-opacity="0.35"/>
+<path d="M126 330 C126 392 254 392 254 330 Z" fill="#6B5A44" fill-opacity="0.35"/>
+<path class="mold-fill" d="M126 330 C126 392 254 392 254 330 Z" stroke="none"/>
+</g>
+<path class="pour" d="M188 120 C191 180 186 260 190 332" stroke="#FF8A3D" stroke-width="9"/>
+<g class="sparks"><circle class="sp1" cx="190" cy="330" r="3.5" fill="#FFC56B" stroke="none"/><circle class="sp2" cx="190" cy="330" r="3" fill="#FF8A3D" stroke="none"/><circle class="sp3" cx="190" cy="330" r="3.2" fill="#FFE3A3" stroke="none"/><circle class="sp4" cx="190" cy="330" r="2.6" fill="#FF6A1E" stroke="none"/></g>
+<g class="crucible">
+<path d="M250 90 L330 90 L320 180 L260 180 Z" fill="#E4E6E8" fill-opacity="0.7"/>
+<ellipse class="melt" cx="290" cy="96" rx="37" ry="7" stroke="none"/>
+<path d="M330 120 L380 108 M330 140 L380 128" stroke-width="3"/>
+</g>
+<g class="draw">
+<path d="M330 360 C330 410 450 410 450 360 Z"/>
+<path d="M322 360 H458" stroke-width="2"/>
+<path d="M330 366 C314 362 312 378 328 376"/><path d="M450 366 C466 362 468 378 452 376"/>
+</g>
+<path class="shine-line" d="M350 372 C370 392 410 392 430 372" stroke="#FFFFFF" stroke-width="2.5"/>
+</svg>
+<span class="slide-cap" style="font-size: 12px; letter-spacing: 0.3em; color: #0F1B2D">CASTING IN OUR FOUNDRY</span>
+</div>
+<div class="slide" aria-hidden="true" style="width: 25%; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<svg class="art-svg" width="400" height="400" viewBox="0 0 520 520" fill="none" stroke="#0F1B2D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"  >
+<g class="ring"><circle cx="260" cy="260" r="236" stroke-opacity="0.35" stroke-dasharray="2 10"/><circle cx="260" cy="24" r="5" fill="#C1A064" stroke="none"/></g>
+<g class="ring2"><circle cx="260" cy="260" r="200" stroke-opacity="0.4" stroke-dasharray="60 14 4 14"/></g>
+
+<g class="bob">
+<g class="steam"><path class="s1" d="M232 190 C220 172 244 162 232 142"/><path class="s2" d="M260 186 C248 166 272 156 260 132"/><path class="s3" d="M288 190 C276 172 300 162 288 142"/></g>
+<g class="draw">
+<path d="M180 262 H340 V338 C340 364 180 364 180 338 Z"/>
+<path d="M180 262 H340" stroke-width="2"/>
+<path d="M180 280 H156 C150 280 150 292 156 292 H180"/>
+<path d="M340 280 H364 C370 280 370 292 364 292 H340"/>
+<path d="M200 300 H320" stroke-opacity="0.35"/>
+</g>
+<g class="lid"><g class="draw">
+<path d="M174 258 C184 222 336 222 346 258 Z"/>
+<path d="M250 226 V216 H270 V226"/>
+</g></g>
+</g>
+
+<g class="rock"><g class="draw">
+<ellipse cx="118" cy="408" rx="62" ry="15"/>
+<path d="M56 408 C60 432 176 432 180 408"/>
+<path d="M180 404 L250 386 C256 385 258 394 252 396 L182 414"/>
+</g></g>
+
+<g class="tilt"><g class="draw">
+<path d="M346 446 C336 378 452 378 442 446 Z"/>
+<path d="M340 446 H448"/>
+<path d="M364 392 C368 350 422 350 426 392"/>
+<path d="M436 420 L470 392 L476 396"/>
+<path d="M388 374 H400"/>
+</g>
+<g class="steam"><path class="s2" d="M478 382 C470 368 488 360 480 344"/></g>
+</g>
+
+<g class="swing"><g class="draw">
+<path d="M90 120 L150 200"/>
+<path d="M150 200 C132 206 132 236 156 240 C180 244 188 214 170 202 Z"/>
+</g></g>
+</svg>
+<span class="slide-cap" style="font-size: 12px; letter-spacing: 0.3em; color: #0F1B2D">ALUMINUM COOKWARE</span>
+</div>
+</div>
+</div>
+<div class="dots" aria-hidden="true" style="position: relative; z-index: 1; display: flex; gap: 10px; margin: 6px 0 14px"><span class="dot dt1"></span><span class="dot dt2"></span><span class="dot dt3"></span></div>
+<div class="serif rise d3 brand-xl" style="font-size: 70px; font-weight: 600; letter-spacing: 0.05em; line-height: 1"><span class="chrome">SREE PARVATHI</span></div>
+<div class="rise d5" style="font-size: 14px; letter-spacing: 0.9em; color: #0F1B2D; margin-left: 0.9em">METALS</div>
+</div>
+</section>
+
+<div class="progress" aria-hidden="true"></div>
+<div class="metal-dark" style="height: 84px; display: flex; align-items: center; overflow: hidden; color: #EADFC6; font-size: 13px; letter-spacing: 0.26em">
+<div class="ticker">
+<div style="display: flex; gap: 64px; padding-right: 64px; white-space: nowrap"><span>CORROSION RESISTANT</span><span class="gem g1" style="color: #C1A064">◆</span><span>FULLY RECYCLABLE</span><span class="gem g2" style="color: #C1A064">◆</span><span>HAND FINISHED</span><span class="gem g3" style="color: #C1A064">◆</span><span>MADE TO ORDER</span><span class="gem g4" style="color: #C1A064">◆</span><span>SREE PARVATHI METALS</span><span class="gem g5" style="color: #C1A064">◆</span></div>
+<div aria-hidden="true" style="display: flex; gap: 64px; padding-right: 64px; white-space: nowrap"><span>CORROSION RESISTANT</span><span class="gem g1" style="color: #C1A064">◆</span><span>FULLY RECYCLABLE</span><span class="gem g2" style="color: #C1A064">◆</span><span>HAND FINISHED</span><span class="gem g3" style="color: #C1A064">◆</span><span>MADE TO ORDER</span><span class="gem g4" style="color: #C1A064">◆</span><span>SREE PARVATHI METALS</span><span class="gem g5" style="color: #C1A064">◆</span></div>
+</div>
+</div>
+
+<section id="casting" class="sec casting" style="box-sizing: border-box; padding: 120px 80px; display: flex; flex-direction: column; gap: 56px; background: #0A1322; color: #F7F4ED; position: relative; overflow: hidden">
+<div class="sec-head reveal" style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 12px; letter-spacing: 0.32em; color: #F0A868">OUR FOUNDRY</div>
+<h2 class="serif h2" style="margin: 0; font-size: 64px; font-weight: 400; line-height: 1.05">Cast in fire,<br><span class="molten-text" style="font-style: italic">finished by hand</span></h2>
+</div>
+<p style="margin: 0; max-width: 400px; font-size: 16px; line-height: 1.7; color: #D9CFC4">Aluminum utensils and parts cast in sand and permanent molds — thick-walled, even-heating and made to last for generations.</p>
+</div>
+<div class="cast-grid reveal" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 260px 260px; gap: 20px">
+<div class="molten cast-img k1" style="grid-column: span 2; grid-row: span 2; position: relative; overflow: hidden; display: flex; align-items: flex-end; box-sizing: border-box; padding: 20px 24px"><img class="cast-photo" src="https://images.unsplash.com/photo-1613970351372-9804e380bd09?auto=format&fit=crop&w=900&q=75" alt="Molten metal pouring from a furnace into a ladle" loading="lazy" onerror="this.remove()"><span class="cast-label" style="position: relative; z-index: 2; font-size: 12px; letter-spacing: 0.22em; color: #FFD9B0">MOLTEN ALUMINUM</span></div>
+<div class="molten cast-img k2" style="position: relative; overflow: hidden; display: flex; align-items: flex-end; box-sizing: border-box; padding: 20px 24px"><img class="cast-photo" src="https://images.pexels.com/photos/37816815/pexels-photo-37816815.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Foundry worker pouring molten metal into a mold" loading="lazy" onerror="this.remove()"><span class="cast-label" style="position: relative; z-index: 2; font-size: 12px; letter-spacing: 0.22em; color: #FFD9B0">POURING THE MOLD</span></div>
+<div class="molten cast-img k3" style="position: relative; overflow: hidden; display: flex; align-items: flex-end; box-sizing: border-box; padding: 20px 24px"><img class="cast-photo" src="https://images.pexels.com/photos/33444783/pexels-photo-33444783.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Molten metal poured from a crucible in a sand foundry" loading="lazy" onerror="this.remove()"><span class="cast-label" style="position: relative; z-index: 2; font-size: 12px; letter-spacing: 0.22em; color: #FFD9B0">SAND CASTING</span></div>
+</div>
+<div class="grid4" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px">
+<div class="cstep reveal" style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid #4A2E1E">
+<span class="serif molten-text m1" style="font-size: 48px; font-style: italic">01</span>
+<h3 class="serif" style="margin: 0; font-size: 26px; font-weight: 500">Melt</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #D9CFC4">Aluminum ingots and clean scrap are melted in the furnace at around 700 °C.</p>
+</div>
+<div class="cstep reveal" style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid #4A2E1E">
+<span class="serif molten-text m2" style="font-size: 48px; font-style: italic">02</span>
+<h3 class="serif" style="margin: 0; font-size: 26px; font-weight: 500">Pour</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #D9CFC4">Molten metal is poured into sand or permanent molds shaped like each kadai, handi or part.</p>
+</div>
+<div class="cstep reveal" style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid #4A2E1E">
+<span class="serif molten-text m3" style="font-size: 48px; font-style: italic">03</span>
+<h3 class="serif" style="margin: 0; font-size: 26px; font-weight: 500">Cool &amp; release</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #D9CFC4">Castings cool and set, then are broken out of the mold and trimmed.</p>
+</div>
+<div class="cstep reveal" style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid #4A2E1E">
+<span class="serif molten-text m4" style="font-size: 48px; font-style: italic">04</span>
+<h3 class="serif" style="margin: 0; font-size: 26px; font-weight: 500">Grind &amp; polish</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #D9CFC4">Every piece is ground, polished and inspected before handles and finishes go on.</p>
+</div>
+</div>
+</section>
+
+<section id="collections" class="sec" style="box-sizing: border-box; padding: 130px 80px 120px; display: flex; flex-direction: column; gap: 64px">
+<div class="sec-head reveal" style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 12px; letter-spacing: 0.32em; color: #8A6A2E">THE COLLECTIONS</div>
+<h2 class="serif h2" style="margin: 0; font-size: 64px; font-weight: 400; line-height: 1.05">Six ways we work<br>with aluminum</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 380px"><p style="margin: 0; max-width: 380px; font-size: 16px; line-height: 1.7; color: #4A5568">Every piece is available in brushed, anodised or powder-coated finishes. Ask about bulk and trade pricing.</p>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 11px; letter-spacing: 0.28em; color: #5B6679">AVAILABLE FINISHES</span><div class="swatches" role="img" aria-label="Available finishes: silver, gold, copper, rose gold, teal, cobalt, emerald, plum, black" style="display: flex; gap: 10px; flex-wrap: wrap"><span class="swatch sw-silver" title="Silver" style="animation-delay: 0.00s"></span><span class="swatch sw-gold" title="Gold" style="animation-delay: 0.15s"></span><span class="swatch sw-copper" title="Copper" style="animation-delay: 0.30s"></span><span class="swatch sw-rose" title="Rose gold" style="animation-delay: 0.45s"></span><span class="swatch sw-teal" title="Teal" style="animation-delay: 0.60s"></span><span class="swatch sw-cobalt" title="Cobalt" style="animation-delay: 0.75s"></span><span class="swatch sw-emerald" title="Emerald" style="animation-delay: 0.90s"></span><span class="swatch sw-plum" title="Plum" style="animation-delay: 1.05s"></span><span class="swatch sw-black" title="Black" style="animation-delay: 1.20s"></span></div></div></div>
+</div>
+<div class="grid3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px">
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c1" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1584990347193-6bebebfeaeee?auto=format&fit=crop&w=900&q=75" alt="Metal cooking pots" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="170" height="130" viewBox="0 0 170 130" fill="none" stroke="#0F1B2D" stroke-width="1.3"><path d="M25 45 H145 V100 C145 115 25 115 25 100 Z"/><ellipse cx="85" cy="45" rx="60" ry="10"/><path d="M25 55 H5"/><path d="M145 55 H165"/><path d="M70 30 H100"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Cookware &amp; Kitchen</h3>
+<span style="font-size: 14px; color: #5B6679">From [PRICE]</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Pots, pans, trays and utensils that heat evenly and never rust.</p>
+</article>
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c2" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1559310839-62ea9d2e37cd?auto=format&fit=crop&w=900&q=75" alt="Metal chair" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="130" height="170" viewBox="0 0 130 170" fill="none" stroke="#0F1B2D" stroke-width="1.3"><path d="M30 10 V95 H100"/><path d="M30 95 V165"/><path d="M100 95 V165"/><path d="M30 95 L100 95 L108 80 L36 80"/><path d="M30 30 H45"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Furniture</h3>
+<span style="font-size: 14px; color: #5B6679">From [PRICE]</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Indoor and outdoor chairs, tables and loungers, light enough to move.</p>
+</article>
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c3" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1569216961559-fd512349ebba?auto=format&fit=crop&w=900&q=75" alt="Modern window frames" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="150" height="170" viewBox="0 0 150 170" fill="none" stroke="#0F1B2D" stroke-width="1.3"><rect x="10" y="10" width="130" height="150"/><rect x="20" y="20" width="110" height="130"/><path d="M75 20 V150"/><path d="M20 85 H130"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Windows &amp; Doors</h3>
+<span style="font-size: 14px; color: #5B6679">Quote</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Slim-profile frames, sliding doors and partitions, cut to your measurements.</p>
+</article>
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c4" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1681108212545-04cabe9cf771?auto=format&fit=crop&w=900&q=75" alt="Metal cylinders and profiles" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="180" height="130" viewBox="0 0 180 130" fill="none" stroke="#0F1B2D" stroke-width="1.3"><path d="M10 100 L60 120 L170 90 L120 70 Z"/><path d="M10 85 L60 105 L170 75 L120 55 Z"/><path d="M10 70 L60 90 L170 60 L120 40 Z"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Sheets &amp; Profiles</h3>
+<span style="font-size: 14px; color: #5B6679">Trade</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Sheets, bars, tubes and extrusions for fabricators and builders.</p>
+</article>
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c5" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=900&q=75" alt="Metal pendant lamps" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="130" height="170" viewBox="0 0 130 170" fill="none" stroke="#0F1B2D" stroke-width="1.3"><path d="M35 10 H95 L110 60 H20 Z"/><path d="M65 60 V150"/><ellipse cx="65" cy="155" rx="40" ry="8"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Lighting &amp; Décor</h3>
+<span style="font-size: 14px; color: #5B6679">From [PRICE]</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Lamps, planters, mirrors and wall art in hand-brushed finishes.</p>
+</article>
+
+<article class="card reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div class="metal card-img c6" style="height: 360px; display: flex; align-items: center; justify-content: center"><img class="photo" src="https://images.unsplash.com/photo-1611182760870-6d2a93b7beaf?auto=format&fit=crop&w=900&q=75" alt="Metal railings" loading="lazy" onerror="this.remove()"><span class="tint"></span>
+<svg width="190" height="130" viewBox="0 0 190 130" fill="none" stroke="#0F1B2D" stroke-width="1.3"><path d="M10 25 H180"/><path d="M10 120 H180"/><path d="M15 25 V120"/><path d="M175 25 V120"/><path d="M45 25 V120"/><path d="M75 25 V120"/><path d="M105 25 V120"/><path d="M135 25 V120"/></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Railings &amp; Gates</h3>
+<span style="font-size: 14px; color: #5B6679">Quote</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #4A5568">Balcony railings, fences and gates that stay beautiful through every season.</p>
+</article>
+
+</div>
+</section>
+
+<section id="custom" class="metal-dark sec" style="box-sizing: border-box; padding: 120px 80px; display: flex; flex-direction: column; gap: 64px; color: #F7F4ED"><img class="bgphoto" src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=900&q=75" alt="" loading="lazy" onerror="this.remove()">
+<div class="sec-head reveal" style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 12px; letter-spacing: 0.32em; color: #D6B97C">CUSTOM WORK</div>
+<h2 class="serif h2" style="margin: 0; font-size: 64px; font-weight: 400; line-height: 1.05">Made to your measure</h2>
+</div>
+<p style="margin: 0; max-width: 400px; font-size: 16px; line-height: 1.7; color: #C9D2DE">Have a drawing, a photo or just an idea? We turn it into a finished piece.</p>
+</div>
+<div class="grid3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px">
+<div class="step reveal" style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #34496A; padding-top: 32px">
+<span class="serif gold-text n1" style="font-size: 56px; font-style: italic; color: #D6B97C">01</span>
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Share your idea</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #C9D2DE">Send sizes, sketches or reference photos and tell us how you'll use it.</p>
+</div>
+<div class="step reveal" style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #34496A; padding-top: 32px">
+<span class="serif gold-text n2" style="font-size: 56px; font-style: italic; color: #D6B97C">02</span>
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Approve the design</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #C9D2DE">We send a drawing, finish options and a clear quote before anything is cut.</p>
+</div>
+<div class="step reveal" style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #34496A; padding-top: 32px">
+<span class="serif gold-text n3" style="font-size: 56px; font-style: italic; color: #D6B97C">03</span>
+<h3 class="serif" style="margin: 0; font-size: 30px; font-weight: 500">Crafted &amp; delivered</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #C9D2DE">Your piece is fabricated, finished, inspected and delivered to your door.</p>
+</div>
+</div>
+</section>
+
+<section id="about" class="about" style="height: 640px; display: flex">
+<div class="metal about-img" style="width: 620px; display: flex; align-items: flex-end; box-sizing: border-box; padding: 44px 48px"><img class="photo about-photo" src="https://images.unsplash.com/photo-1531053326607-9d349096d887?auto=format&fit=crop&w=900&q=75" alt="Metal fabrication in a workshop" loading="lazy" onerror="this.remove()">
+<span style="font-size: 12px; letter-spacing: 0.24em; color: #0F1B2D">[WORKSHOP PHOTO]</span>
+</div>
+<div class="about-text reveal" style="flex-grow: 1; box-sizing: border-box; padding: 110px 100px; display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 12px; letter-spacing: 0.32em; color: #8A6A2E">OUR STORY</div>
+<h2 class="serif h2" style="margin: 0; font-size: 56px; font-weight: 400; line-height: 1.08">A quiet obsession<br>with a remarkable metal</h2>
+<p style="margin: 0; max-width: 560px; font-size: 17px; line-height: 1.75; color: #4A5568">[Tell your story here: when the business started, where you're based, and what makes your work different — your craftsmanship, materials or service.]</p>
+<a href="#contact" style="font-size: 13px; letter-spacing: 0.16em; border-bottom: 1px solid #0F1B2D; padding-bottom: 6px; align-self: flex-start">VISIT THE WORKSHOP →</a>
+</div>
+</section>
+
+<section id="contact" class="sec contact" style="box-sizing: border-box; padding: 120px 80px; display: flex; gap: 120px; border-top: 1px solid #E4DDCC">
+<div class="contact-left reveal" style="width: 460px; display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 12px; letter-spacing: 0.32em; color: #8A6A2E">CONTACT</div>
+<h2 class="serif h2" style="margin: 0; font-size: 64px; font-weight: 400; line-height: 1.05">Let's make<br>something lasting</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A5568">Tell us what you need and we'll reply with ideas and a quote.</p>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #0F1B2D; margin-top: 12px">
+<span>[YOUR ADDRESS], Arizona</span>
+<span>[PHONE NUMBER]</span>
+<span>[EMAIL ADDRESS]</span>
+</div>
+</div>
+<form class="form reveal" style="flex-grow: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; align-content: start">
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; letter-spacing: 0.18em; color: #4A5568">NAME<input type="text" style="height: 52px; border: none; border-bottom: 1px solid #A7AFBD; background: transparent; font-size: 16px; color: #0F1B2D"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; letter-spacing: 0.18em; color: #4A5568">EMAIL<input type="email" style="height: 52px; border: none; border-bottom: 1px solid #A7AFBD; background: transparent; font-size: 16px; color: #0F1B2D"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; letter-spacing: 0.18em; color: #4A5568">PHONE<input type="tel" style="height: 52px; border: none; border-bottom: 1px solid #A7AFBD; background: transparent; font-size: 16px; color: #0F1B2D"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; letter-spacing: 0.18em; color: #4A5568">INTERESTED IN<select style="height: 52px; border: none; border-bottom: 1px solid #A7AFBD; background: transparent; font-size: 16px; color: #0F1B2D"><option>Cookware &amp; Kitchen</option><option>Furniture</option><option>Windows &amp; Doors</option><option>Sheets &amp; Profiles</option><option>Lighting &amp; Décor</option><option>Railings &amp; Gates</option><option>Custom work</option></select></label>
+<label style="grid-column: span 2; display: flex; flex-direction: column; gap: 10px; font-size: 12px; letter-spacing: 0.18em; color: #4A5568">YOUR PROJECT<textarea rows="4" style="border: none; border-bottom: 1px solid #A7AFBD; background: transparent; font-size: 16px; color: #0F1B2D; resize: none"></textarea></label>
+<button type="button" class="btn pulse" style="grid-column: span 2; justify-self: start; height: 58px; padding: 0 40px; border: none; background: #0F1B2D; color: #F7F4ED; font-size: 13px; letter-spacing: 0.16em; cursor: pointer; font-family: 'Manrope', sans-serif">SEND ENQUIRY</button>
+</form>
+</section>
+
+<footer class="metal-dark ftr" style="flex-grow: 1; box-sizing: border-box; padding: 64px 80px; display: flex; justify-content: space-between; align-items: flex-start; color: #C9D2DE; font-size: 14px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span class="serif gold-text" style="font-size: 30px; font-weight: 600; letter-spacing: 0.04em; color: #F7F4ED">SREE PARVATHI METALS</span>
+<span>Fine aluminum goods &amp; fabrication</span>
+</div>
+<div style="display: flex; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="#collections" style="color: #C9D2DE">Collections</a><a href="#custom" style="color: #C9D2DE">Custom work</a><a href="#about" style="color: #C9D2DE">About</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="#contact" style="color: #C9D2DE">Contact</a><a href="#contact" style="color: #C9D2DE">Trade enquiries</a><a href="#contact" style="color: #C9D2DE">Instagram</a></div>
+</div>
+<span>© 2026 Sree Parvathi Metals</span>
+</footer>
+
+</div>
+</body>
+</html>
