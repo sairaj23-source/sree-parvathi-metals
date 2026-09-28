@@ -1,4 +1,4 @@
-# Sri Parvathi Rolling — website
+# Sri Parvathi Metals — website
 
 Live at **https://sreeparvathimetals.com** (hosted on GitHub Pages).
 
