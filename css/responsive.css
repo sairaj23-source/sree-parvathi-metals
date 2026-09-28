@@ -4,7 +4,7 @@
    ========================================================== */
 
 @supports (animation-timeline: view()) {
-  .reveal{animation:revealUp linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+  .reveal{animation:revealUp linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
   .step::before{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 35%}
   .progress{display:block;position:fixed;top:0;left:0;right:0;height:3px;z-index:50;background:linear-gradient(90deg,#8A6A2E,#F6E7BD,#C1A064);transform-origin:left;animation:grow linear both;animation-timeline:scroll(root)}
 }
