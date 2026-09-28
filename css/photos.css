@@ -1,0 +1,17 @@
+/* ==========================================================
+   Sri Parvathi Rolling — Photos
+   Styles for product, workshop and foundry photos.
+   ========================================================== */
+
+.cast-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.cast-img:hover .cast-photo{transform:scale(1.07)}
+.card-img .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .card-img .photo{transform:scale(1.08)}
+.card-img .tint{position:absolute;inset:0;mix-blend-mode:soft-light;opacity:.55;pointer-events:none}
+.c1 .tint{background:#B8733D}.c2 .tint{background:#C98B86}.c3 .tint{background:#2E8C8A}.c4 .tint{background:#2F5DA8}.c5 .tint{background:#2F7D55}.c6 .tint{background:#7A4A7E}
+.about-img{position:relative;overflow:hidden}
+.about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-img > span{position:relative;z-index:1;color:#fff !important;display:none}
+#custom{position:relative;overflow:hidden}
+#custom > .bgphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.16;pointer-events:none}
+#custom > *:not(.bgphoto){position:relative}
